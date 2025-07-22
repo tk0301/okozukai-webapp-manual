@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お小遣い管理アプリ（手動追加版）</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>お小遣い管理</h1>
+    <p><strong>今日の日付:</strong> <span id="today"></span></p>
+    <p><strong>現在の残高:</strong> <span id="balance">0</span> 円</p>
+
+    <input type="number" id="addAmount" placeholder="お小遣いを追加（円）" />
+    <button onclick="addAllowance()">追加する</button>
+
+    <input type="number" id="spent" placeholder="今日使った金額を入力（円）" />
+    <button onclick="submitSpent()">記録する</button>
+
+    <button onclick="resetBalance()">リセットする</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
